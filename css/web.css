@@ -1,0 +1,160 @@
+body{
+	background-image: url(../gambar/cv.jpg);
+}
+*{margin: 0px; padding: 0px}
+head, footer, section, nav{ display: block;}
+.webstatis{
+margin: 15px auto;
+width: 980px;
+}
+#logo{
+float: left;
+width: 150px;
+margin-right: 10px;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#judul{
+background-image: url(../gambar/mju.jpg); background-position: bottom;
+height: 115px;
+margin: 10px auto -15px auto;
+padding: 30px 0px 45px 0px;
+border-radius: 10px 10px 0 0;
+box-shadow: 0 0 10px rgb(0,0 ,0) inset;
+
+
+}
+#judul h1{
+font-size: 40px;
+line-height: 38px;
+font-weight: 500px;
+color: #34A853;
+}
+#judul h2{
+margin-top: 30px;
+font-size: 25px;
+font-weight: 300px;
+color: #794520;
+}
+
+/*menu*/
+
+
+nav ul{
+	width: 100%;
+	background-image: url(../gambar/yu.jpg);
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 10;
+	border-radius: 0px 0 0px 0;
+	box-shadow: 0 0 20px rgb(0,0,0) inset;
+
+}
+nav ul:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+nav ul li{
+	float: left;
+}
+nav ul li:hover{
+	background: #67D6EA;
+}
+nav ul li:hover a{
+	color: #69A21E;
+}
+nav ul li{
+display: block;
+padding: 15px 44px;
+color: #69A21E;
+text-decoration: none;
+border-radius: 10px 0 10px 0
+}
+/*menghilangkan semua sub menu*/
+nav ul ul{
+	display: none;
+	border-radius: 10px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: 200px;
+}
+/*memunculkan sub menu ketika didekati kursor*/
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	float: none;
+	border-top: 1px solid #69A21E;
+	position: relative;
+}
+nav ul ul a{
+padding: 15px 20px;
+color: blue;
+}
+nav ul ul li a:hover{
+
+}
+nav ul ul ul{
+position: absolute;
+left: 100%;
+top: 0;
+}
+/*bagian isi*/
+
+#konten{
+float: left;
+width: 640px;
+box-shadow: 0 0 10px rgb(1,1,1) inset;
+background-image: url(../gambar/u8.jpg);
+height: 100%;
+color: white;
+}
+#konten img{
+padding-bottom: 20px;
+}
+#konten h1{
+color: whitesmoke;
+animation-fill-mode: none;
+}
+#konten ul{
+padding-left: 20px;
+padding-bottom: 50px;
+}
+#sidebar{
+float: right;
+width: 320px;
+padding: 100px 0px 50px 20px;
+box-shadow: 0 0 10px rgb(0,0 ,0) inset;
+background: url(../gambar/yu.jpg);
+color: green;
+padding-top: 50px;
+padding-bottom: 1009px;
+}
+#sidebar h1{
+align-items: center;
+
+}
+#sidebar form{
+padding-bottom: 25px;
+padding-top: -30px;
+p
+
+}
+/*bagian bawah/footer*/
+
+#bawah{
+background-image: url(../gambar/mju.jpg); background-size: contain;
+clear: both;
+width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: verdana;
+font-size: 20px;
+text-align: center;
+border-radius: 0 0 10px 10px;
+box-shadow: 0 0 10px rgb(0,0,0) inset;
+width: 980px;
+text-shadow: 5px 5px 5px #0057A6;
+}
