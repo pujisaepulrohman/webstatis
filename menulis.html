@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>membuat web statis</title>
+<link href="css/web.css" rel="stylesheet"/>
+<link href="gambar/garuda.jpg" rel="shortcut icon"/>
+</head>
+<body>
+	<header class="webstatis" id="judul">
+		<img src="gambar/ttj.png" width="50px" alt="Logo tkj" id="logo"></img>
+		<h1>Teknik Komputer & Jaringan</h1>
+		<h2>Kelas TKJ angkatan 15 di Rumah Gemilang Indonesia</h2>
+		
+	</header>
+	<nav class="webstatis" id="menu">
+		<ul>
+			<li><a href="index.html" >Beranda</a></li>
+			<li><a href="profil.html" >Profil</a></li>
+			<li><a href="#" >Belajar TKJ</a>
+				<ul>
+					<li><a href="jarkom.html" >Jaringan komputer</a></li>
+					<li><a href="web.html" >Web develovmen</a></li>	
+					<li><a href="hard.html" >Hardware Software</a></li>
+					<li><a href="menulis.html" >Menulis Kreatif</a></li>
+					<li><a href="server.html" >Server</a></li>	
+				</ul></li>
+			<li><a href="#" >Galeri</a>
+				<ul>
+					<li><a href="foto.html" >Foto</a></li>
+					<li><a href="video.html" >Video</a></li>
+				</ul></li>
+			<li><a href="kontak.html" >Kontak saya</a></li>
+		</ul>
+	</nav>
+	<section class="webstatis" id="utama">
+		<section id="konten">
+			<article>
+				<header>
+					<h1 align="center">Belajar Menulis</h1>
+					</h1>
+				</header>
+				<p>
+					<embed src="pdf/tulis.pdf" width="639px" height="526px"></embed>
+				</p>
+			</article>
+		</section>
+		<aside id="sidebar">
+			<form name="jksearch" action="http://www.google.com/search" method="get" onsubmit="jksitesearch(this)" target="_blank">
+
+			<input id="hiddenquery" type="hidden" name="q" />
+
+			<input name="qfront" onfocus="if(this.value==this.defaultValue)this.value='';" value="Search on this site..." type="text" onblur="if(this.value=='')this.value=this.defaultValue;" style="width: 240px;border:none;padding:8px 10px; font:normal 11px arial;color:#666; background:url(http://3.bp.blogspot.com/-KPO8JYvY8q0/TaTLCf3UXqI/AAAAAAAAAk0/HMNCQmZV-YI/s1600/search_field.jpg) no-repeat;" /><input type="image" src="http://4.bp.blogspot.com/-tS-vIIuEX1Y/TaTJeZlNYPI/AAAAAAAAAkw/-OF_RBII1lw/s1600/search_button.jpg" align="top" value="Search"/>
+
+				<div style="font: normal 11px Arial;color:#666;padding:2px 0;">
+
+				<input name="se" type="radio" checked /> Google
+
+				<input name="se" type="radio" /> Yahoo
+
+				<input name="se" type="radio" /> Msn
+
+					</div>
+					<script type="text/javascript">
+
+// All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+
+// This notice must stay intact for use
+
+//Enter domain of site to search.
+
+var domainroot="http://bangsahid.blogspot.com/"
+
+var searchaction=[ //form action for the 3 search engines
+
+"http://www.google.com/search",
+
+"http://search.yahoo.com/search",
+
+"http://search.msn.com/results.aspx"
+
+]
+
+var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+
+function switchaction(cur, index){
+
+cur.form.action=searchaction[index]
+
+document.getElementById("hiddenquery").name=queryfieldname[index]
+
+}
+
+function jksitesearch(curobj){
+
+for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
+
+if (document.jksearch.se[i].checked==true)
+
+switchaction(document.jksearch.se[i], i)
+
+}
+
+document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
+
+}
+
+</script>
+
+				</form>
+			<h3 align="center">sign in, please !!!</h3>>
+			<form onload="alert('maaf password anda salah!')">
+	<table align="center">
+		<tr>
+			<td>Email</td><td>:</td>
+			<td><input type="text" name="nama"/></td>
+		</tr>
+		<tr>
+			<td>Password</td><td>:</td>
+			<td><input type="password" name="password"/>
+			</td>
+		<tr>
+			<td><input type="submit" name="login" value="login"/>
+			<input type="reset" name="batal" value="batal"/></td>
+		</tr>
+		
+	</table>
+	</form>
+		</aside>
+	</section>
+	<footer class="webstatis" id="bawah">web statis
+	<br/>by <a href="mailto:pujisaepul@gmail.com" target="_blank">Puji Saepul Rohman</a>
+	<br/>&copy; 2016
+	</footer>
+
+<div align="center" style="z-index:9;visibility:visible;"><a href="http://www.totallyfreecursors.com/" target="_blank" class="tfc"><img src="http://downloads.totallyfreecursors.com/public/CursorsLogo88-31.gif" border="0" width="88" height="31" alt="Free Flaming Soccer Ball Handwriting Cursors at www.totallyfreecursors.com" /></a></div><style>HTML,BODY{cursor: url("http://downloads.totallyfreecursors.com/cursor_files/handwriting20.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/handwriting20.gif"), auto;}</style>
+</body>
+</html>
